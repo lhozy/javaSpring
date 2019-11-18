@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring5Stu01" />
+        <module name="springAOP_01" />
+        <module name="springAOP_Advice" />
+        <module name="springAOP_AdviceAnno" />
+        <module name="springIOC_DI_Anno" />
+        <module name="springIOC_DI_withoutXML" />
+        <module name="springIOC_DI_XML" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring5Stu01" target="1.5" />
+      <module name="springAOP_01" target="1.5" />
+      <module name="springAOP_Advice" target="1.6" />
+      <module name="springAOP_AdviceAnno" target="1.6" />
+      <module name="springIOC_DI_Anno" target="1.5" />
+      <module name="springIOC_DI_withoutXML" target="1.5" />
+      <module name="springIOC_DI_XML" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

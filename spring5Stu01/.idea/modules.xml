@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring5Stu01.iml" filepath="$PROJECT_DIR$/spring5Stu01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../springAOP_01/springAOP_01.iml" filepath="$PROJECT_DIR$/../springAOP_01/springAOP_01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../springAOP_Advice/springAOP_Advice.iml" filepath="$PROJECT_DIR$/../springAOP_Advice/springAOP_Advice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../springAOP_AdviceAnno/springAOP_AdviceAnno.iml" filepath="$PROJECT_DIR$/../springAOP_AdviceAnno/springAOP_AdviceAnno.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../springIOC_DI_Anno/springIOC_DI_Anno.iml" filepath="$PROJECT_DIR$/../springIOC_DI_Anno/springIOC_DI_Anno.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../springIOC_DI_XML/springIOC_DI_XML.iml" filepath="$PROJECT_DIR$/../springIOC_DI_XML/springIOC_DI_XML.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../springIOC_DI_withoutXML/springIOC_DI_withoutXML.iml" filepath="$PROJECT_DIR$/../springIOC_DI_withoutXML/springIOC_DI_withoutXML.iml" />
+    </modules>
+  </component>
+</project>

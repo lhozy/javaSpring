@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <bean id="accountService" class="com.lhozy.service.impl.AccountServiceImpl"></bean>
+    <bean id="logger" class="com.lhozy.utils.Logger"></bean>
+
+    <aop:config>
+        <!--切入点表达式配置要增强的方法，不能放在aop:aspect 标签之后-->
+        <aop:pointcut id="servicePoint" expression="execution(* com.lhozy.service.impl.*.*(..))"/>
+        <aop:aspect id="logAdvice" ref="logger">
+            <aop:before method="beforeAdvice" pointcut-ref="servicePoint"></aop:before>
+            <aop:after-returning method="afterAdvice" pointcut-ref="servicePoint"></aop:after-returning>
+            <aop:after-throwing method="exceptionAdvice" pointcut-ref="servicePoint"></aop:after-throwing>
+            <aop:after method="finalAdvice" pointcut-ref="servicePoint"></aop:after>
+            <!--<aop:after method="finalAdvice" pointcut="execution(* com.lhozy.service.impl.*.*(..))"/>-->
+            <!--<aop:pointcut id="servicePoint" expression="execution(* com.lhozy.service.impl.*.*(..))"/>-->
+            <aop:around method="aroundAdvice" pointcut-ref="servicePoint"></aop:around>
+        </aop:aspect>
+    </aop:config>
+</beans>
